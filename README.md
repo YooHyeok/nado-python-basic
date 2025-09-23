@@ -2,7 +2,7 @@
 
 ## 설치 가이드
 <details>
-<summary>접기/펼치기<summary>
+<summary>접기/펼치기</summary>
 <br>
 
 - Python 공식 웹사이트 downloads 링크 접속  
