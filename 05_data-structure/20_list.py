@@ -14,6 +14,9 @@ print(subway)
 # 조세호씨가 몇번째 칸에 타고 있는가?
 print(subway.index("조세호")) # index(): 리스트의 요소에서 넘겨받은 문자열 탐색 후 index 위치를 반환
 
+# 요소 포함 여부
+print("조세호" in subway)
+
 # 하하씨가 당음 정류장에서 다음 칸에 탐
 subway.append("하하") # append(): 리스트의 가장 마지막에 삽입.
 print(subway) # ['유재석', '조세호', '박명수', '하하']
