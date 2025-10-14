@@ -38,9 +38,9 @@ print(cabinet)
 
 # key만 혹은 value만, 혹은 모든 item을 출력
 print(cabinet.keys()) # dict_keys(['B-100', 'c-20'])
-print(cabinet.values()) # dict_items([('B-100', '김태호'), ('c-20', '조세호')])
+print(cabinet.values()) # dict_values(['김태호', '조세호'])
 print(cabinet.items()) # dict_items([('B-100', '김태호'), ('c-20', '조세호')])
 
 # 모두 삭제 - clear()
 cabinet.clear()
-print(cabinet)
+print(cabinet) # {}
