@@ -1,0 +1,27 @@
+
+""" 
+[모듈 직접 실행]
+
+```
+if __name__ == "__main__": 
+위 조건일 경우 thailand 모듈을 직접 실행
+그렇지 않을 경우 외부 모듈에서 thailand 모듈을 직접 실행
+```
+
+1. thailand.py와 vietnam.py에서 위 코드를 정의해준다.
+2. thailand.py, vietnam.py, __all__.py 각각의 모듈에서 동일하게 실행해준다.
+
+__name__이란 파이썬이 자동으로 설정하는 특별한 내장 변수로, 현재 파일이 직접 실행중인지 구분하는 역할을 한다.
+__main__이란 파이썬이 직접 실행한 파일에 부여되는 이름 값이다. 만약 vietnam.py에서 실행되었을 경우 __name__의 값은 "vietnam"이 될것이다.
+"""
+
+from random import * # random 모듈 안의 모든것들을 사용한다.
+from travel import * # travel 패키지의 모든것을 허용 - 패키지 안에 포함된 모든 것들 중에 import 되기 원하는 대상에 대한 공개 범위를 설정해줘야 한다.
+
+
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+
+# Thailand 모듈을 직접 실행
+trip_to = thailand.ThailandPackage()
+trip_to.detail()
